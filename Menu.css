@@ -1,0 +1,607 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+.header{
+    background-image: url('https://images.unsplash.com/photo-1491960693564-421771d727d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header .logo{
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    position: relative;
+    display: inline-block;
+   }
+   .hamburger{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+   }
+   
+   .nav-links{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    background: white;
+    width: 180px;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
+   }
+   .logos .bi{
+      color: #222;
+   }
+   .logos{
+    display: flex;
+    align-items: center;
+   }
+   .nav-links a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #222;
+   }
+   .nav-links a:hover{
+    background: #f2f2f2;
+   }
+   .menu-bar:hover .nav-links{
+    display: block;
+   }
+
+.section1{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/033/692/644/large_2x/chef-preparing-food-in-the-kitchen-at-the-restaurant-professional-chef-cooking-gourmet-chef-cooking-in-a-commercial-kitchen-ai-generated-free-photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3{
+  background-image: url('lunch.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.image{
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+} 
+.image img{
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.image img:hover ,.section6 img:hover{
+  transform: scalex(1.2);
+}
+.section5{
+  background-image: url('https://media.istockphoto.com/id/1338907189/photo/wooden-table-served-with-plates-with-salad-and-snacks-on-the-open-terrace.jpg?s=170667a&w=0&k=20&c=igptdObNSLjQb5cjRlWrwvUI75SR4yi2KS71ftV_RGc=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+section .section7{
+  background-image: url('section background.jpg');
+}
+ button:hover{
+    background-color: red;
+    border: 2px solid red;
+   }
+footer{
+    background-color: black;
+   }
+   img{
+    height: 100px;
+    width: 100%;
+   }
+   small{
+    color: red;
+    font-size: large;
+   }
+ #link{
+    color: red;
+    text-decoration: none;
+   }
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   }
+   .bi{
+    color: white;
+   }
+   .bi:hover{
+    color: red;
+   }
+   .footer2{
+    color: #777;
+   }
+   .footer2 a{
+    color: white;
+    text-decoration: none;
+   }
+   .footer2 a:hover{
+    color: red;
+   }
+/* Responsiveness for mobile */
+@media (max-width:756px){
+    .logo{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav{
+        display: none;
+    }
+    .section1{
+        height: 300px;
+        font-weight: bold;
+    }
+    .section3{
+      height: 200px;
+    }
+    .section5{
+      height: 300px;
+    }
+    .section7{
+        padding: 70px;
+    }
+    .signup{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+   }
+   .signup label{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+   .signup input{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+   }
+   button{
+    background-color: #222;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+   }
+   .btn{
+    display: flex;
+    justify-content: center;
+   }
+    .grid{
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:1fr 1fr 2fr 3fr;
+    padding: 20px;
+   }
+   .openingtimes{
+    padding-top: 20px;
+      grid-row: 2/3;
+      grid-column: 1/2;
+   }
+   .grid h3{
+    color: white;
+   }
+   .grid p{
+    color: #777;
+   }
+   .gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:1fr 2fr 2fr 2fr;
+    gap: 10px;
+   }
+   .gallery h3{
+    grid-row: 1/2;
+    grid-column: 1/5;
+   }
+   .one{
+    grid-area: 2/1/3/2;
+   }
+   .two{
+    grid-area: 2/2/3/3;
+   }
+   .three{
+    grid-area: 2/3/3/4;
+   }
+   .four{
+    grid-area: 2/4/3/5;
+   }
+   .five{
+    grid-area: 3/1/4/2;
+   }
+   .six{
+    grid-area:3/2/4/3;
+   }
+   .seven{
+     grid-area: 3/3/4/4;
+   }
+   .eight{
+     grid-area: 3/4/4/5;
+   }
+   .nine{
+     grid-area: 4/1/5/2;
+   }
+   .ten{
+     grid-area: 4/2/5/3;
+   }
+   .eleven{
+     grid-area: 4/3/5/4;
+   }
+   .tweleve{
+      grid-area: 4/4/5/5;
+   }
+   .logos{
+     font-size: x-small;
+   }
+}    
+/* Responsiveness for tablet */
+@media(min-width:757px)and (max-width:1199px){
+    .header{
+        height: 100px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav a{
+        font-size: 10px;
+    }
+    .nav a:hover{
+        color: red;
+    }
+     .section1{
+        height: 300px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+      .section3{
+        height: 500px;
+      }
+     .section5{
+      height: 500px;
+     }
+     .section7{
+        padding: 70px;
+    }
+    .signup{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+   }
+   .signup label{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+   .signup input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+   }
+   button{
+    background-color: #222;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+   }
+.grid{
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+   }
+   .openingtimes{
+      grid-row: 2/3;
+      grid-column: 1/2;
+   }
+   .grid h3{
+    color: white;
+   }
+   .grid p{
+    color: #777;
+   }
+   .gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:1fr 2fr 2fr 2fr;
+    gap: 10px;
+   }
+   .gallery h3{
+    grid-row: 1/2;
+    grid-column: 1/5;
+   }
+   .one{
+    grid-area: 2/1/3/2;
+   }
+   .two{
+    grid-area: 2/2/3/3;
+   }
+   .three{
+    grid-area: 2/3/3/4;
+   }
+   .four{
+    grid-area: 2/4/3/5;
+   }
+   .five{
+    grid-area: 3/1/4/2;
+   }
+   .six{
+    grid-area:3/2/4/3;
+   }
+   .seven{
+     grid-area: 3/3/4/4;
+   }
+   .eight{
+     grid-area: 3/4/4/5;
+   }
+   .nine{
+     grid-area: 4/1/5/2;
+   }
+   .ten{
+     grid-area: 4/2/5/3;
+   }
+   .eleven{
+     grid-area: 4/3/5/4;
+   }
+   .tweleve{
+      grid-area: 4/4/5/5;
+   }
+}    
+/* Responsiveness for laptop */
+@media(min-width:1200px){
+    .header{
+        height: 120px;
+    }
+    .logo{
+        font-size: 40px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .logo a{
+        text-decoration: none;
+        color: white;
+    }
+   .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .nav a{
+    font-size: 20px;
+   }
+   .nav a:hover{
+    color: red;
+    font-size: large;
+   }
+   .section1{
+    height: 500px;
+    font-size: 40px;
+    font-weight: bold;
+   }
+   .startersanddrinks,.mainanddesserts{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+   }
+   .section2{
+     display: flex;
+     flex-direction: row;
+     gap: 150px;
+     padding: 100px;
+   }
+   .starter,.drinks,.mainitem,.dessert{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+   .starter1,.drinks,.main,.desserts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+  .starter h3,.drinks h3,.mainitem h3,.dessert h3{
+    color: #555;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  .starter p,.drinks p,.mainitem p,.dessert p{
+    color: #777;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: small;
+  }
+  .section3{
+    height: 500px;
+  }
+ .section4{
+   height: 600px;
+ }
+ .lunch,.dinner{
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+ }
+  .section5{
+    height: 500px;
+    flex-wrap: wrap;
+    padding: 100px;
+  }
+   .image{
+       height: 200px;
+       width: 200px;
+  }
+  .image img{
+    border-radius: 10px;
+  }
+  .lunchitem,.dinneritem{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 80px;
+    gap: 10px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .section6{
+    height: 600px;
+  }
+   .section7{
+    padding: 90px;
+}
+   .signup{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+   }
+   .signup label{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+   }
+   .signup input{
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+   }
+   button{
+    background-color: #222;
+    width: 150px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+   }
+   .grid{
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+   }
+   .openingtimes{
+      grid-row: 2/3;
+      grid-column: 1/2;
+   }
+   .grid h3{
+    color: white;
+   }
+   .grid p{
+    color: #777;
+   }
+   .gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:1fr 2fr 2fr 2fr;
+    gap: 10px;
+   }
+   .gallery h3{
+    grid-row: 1/2;
+    grid-column: 1/5;
+   }
+   .one{
+    grid-area: 2/1/3/2;
+   }
+   .two{
+    grid-area: 2/2/3/3;
+   }
+   .three{
+    grid-area: 2/3/3/4;
+   }
+   .four{
+    grid-area: 2/4/3/5;
+   }
+   .five{
+    grid-area: 3/1/4/2;
+   }
+   .six{
+    grid-area:3/2/4/3;
+   }
+   .seven{
+     grid-area: 3/3/4/4;
+   }
+   .eight{
+     grid-area: 3/4/4/5;
+   }
+   .nine{
+     grid-area: 4/1/5/2;
+   }
+   .ten{
+     grid-area: 4/2/5/3;
+   }
+   .eleven{
+     grid-area: 4/3/5/4;
+   }
+   .tweleve{
+      grid-area: 4/4/5/5;
+   }
+   .footer1{
+    padding: 30px;
+   }
+}   
